@@ -6,6 +6,25 @@
     color: #EFE8E1;
 }
 
+@media only screen and (max-width: 500px) {
+    .desktop {
+        display: none;
+    }
+    * {
+        font-size: 12px;
+    }
+    section {
+        position: relative;
+        top: 4rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+   .mobile {
+        display: none;
+    }
+}
+
 /* tags */
 
 body {
@@ -142,7 +161,7 @@ header {
 }
 
 nav {
-
+    width: 100%;
 }
 
 nav .desktop {
@@ -198,13 +217,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-/* media queries */
-
-@media only screen and (max-width: 500px) {
-    div.desktop {
-        display: none;
-    }
-}
+/* nav media queries */
 
 @media only screen and (max-width: 500px) {
     .mobile-icons {
@@ -212,12 +225,17 @@ nav a:hover {
         flex-direction: row;
         justify-content: space-between;
     }
-}
-
-@media only screen and (min-width: 500px) {
-   .mobile {
-        display: none;
+    nav div.mobile {
+        width: 100%;
+        margin-right: 2rem;
     }
+    nav .mobile img {
+        margin-left: 0;
+    }
+    nav img {
+        margin: 0 1.33rem;
+    }
+
 }
 
 /* hero section */
@@ -256,6 +274,19 @@ button {
 button:hover {
     background-color: #C59F04;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+    .mobile-margin {
+        margin: 0 1.33rem;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 2.67rem;
+    }
+    .hero img {
+        margin: 0;
+    }
 }
 
 /* information section */
@@ -308,6 +339,24 @@ button:hover {
     color: #2E2E2E;
 }
 
+@media only screen and (max-width: 500px) {
+    .mobile-article {
+        margin: 1.33rem;
+        background-color: #EFE8E1;
+        padding-bottom: 1rem;
+    }
+    .mobile-article div {
+        margin: 0 1.33rem;
+    }
+    .information a {
+        color: #080A30;
+    }
+    .information {
+        background-color: #AFC0C7;
+        padding: 1rem 0;
+    }
+}
+
 /* learning section */
 
 .eyebrow {
@@ -317,6 +366,20 @@ button:hover {
     font-weight: 200;
     margin: 0;
     color: #2E2E2E;
+}
+
+@media only screen and (max-width: 500px) {
+    .learning {
+        background-color: #080A30;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    .card {
+        background-color: #EFE8E1;
+        color: #2E2E2E;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
 }
 
 /* thesis section */
@@ -366,4 +429,10 @@ footer li {
     padding: 0 1rem;
     float: right;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 500) {
+    footer {
+        padding: 2rem;
+    }
 }
