@@ -18,14 +18,28 @@
 
     <header>
         <nav>
-            <p><img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo"></p>
-            <p><strong>Colmar</strong>Academy</p>
-            <ul>
-                <li><a href="#on-campus">On campus</a></li>
-                <li><a href="#online">Online</a></li>
-                <li><a href="#for-companies">For Companies</a></li>
-                <li><a href="#sign-in">Sign in</a></li>
-            </ul>
+            <div class="desktop">
+                <div>
+                <p><img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo"></p>
+                <p><strong>Colmar</strong>Academy</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#on-campus">On campus</a></li>
+                        <li><a href="#online">Online</a></li>
+                        <li><a href="#for-companies">For Companies</a></li>
+                        <li><a href="#sign-in">Sign in</a></li>
+                    </ul>       
+                </div>
+            </div>
+            <div class="mobile">
+                <div class="mobile-icons">
+                    <p><img src="./resources/images/ic-logo.svg"></p>
+                    <p><img src="./resources/images/ic-on-campus.svg"></p>
+                    <p><img src="./resources/images/ic-online.svg"></p>
+                    <p><img src="./resources/images/ic-login.svg"></p>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,7 +50,7 @@
             <div class="container">
                 <div class="container-left">
                     <article>
-                        <img src="./resources/images/banner.jpg" alt="a group reads and writes at a table oustide">
+                        <div class="hero-margin"><img src="./resources/images/banner.jpg" alt="a group reads and writes at a table oustide"></div>
                     </article>
                 </div>
                 <div class="container-right">
@@ -70,24 +84,21 @@
                             <img src="./resources/images/information-orientation.jpg" alt="aerial view of people's shadows walking along a path">
                             <div>
                                 <h3>Orientation date</h3>
-                                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                                <p><a href="www.google.com">Read more</a></p>
+                                <p>Tue 10/11 & Wed 10/12: 8am-3pm<br><a href="www.google.com">Read more</a></p>
                             </div>
                     </article>
                     <article class="article-image">
                         <img src="./resources/images/information-campus.jpg" alt="a room with a map of South America">
                         <div>
                             <h3>Our campus</h3>
-                            <p>Find which campus is close by you</p>
-                            <p><a href="www.google.com">Read more</a></p>
+                            <p>Find which campus is close by you<br><a href="www.google.com">Read more</a></p>
                         </div>
                     </article>
                     <article class="article-image">
                         <img src="./resources/images/information-guest-lecture.jpg" alt="an old man">
                         <div>
                             <h3>Our guest lecture</h3>
-                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                            <p><a href="www.google.com">Read more</a></p>
+                            <p>Join a keynote with Oliver Sack about music in medical treatment<br><a href="www.google.com">Read more</a></p>
                         </div>
                     </article>
                 </div>
@@ -100,42 +111,36 @@
     <section class="learning">
         <div class="margin">
             <h2>Start Learning</h2>
-            <div class="container">
+            <div class="container-cards">
                 <article class="card">
                     <img src="./resources/images/course-software.jpg" alt="a desktop computer with two screens">
                     <h3>Software Engineering</h3>
-                    <p class="eyebrow">Courses</p>
-                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                    <p><span class="eyebrow">Courses</span><br>Web Development, Mobile Development, iOT, APIs</p>
                 </article>
                 <article class="card">
                     <img src="./resources/images/course-computer-art.jpg" alt="a hand holds a smart phone">
                     <h3>Computer art</h3>
-                    <p class="eyebrow">Courses</p>
-                    <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    <p><span class="eyebrow">Courses</span><br>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                 </article>
                 <article class="card">
                     <img src="./resources/images/course-design.jpg" alt="a person holds a camera by their waist">
                     <h3>Design</h3>
-                    <p class="eyebrow">Courses</p>
-                    <p>User Experience Design, User Research, Visual Design</p>
+                    <p><span class="eyebrow">Courses</span><br>User Experience Design, User Research, Visual Design</p>
                 </article>
                 <article class="card">
                     <img src="./resources/images/course-data.jpg" alt="a laptop with graphs and data on the screen">
                     <h3>Data</h3>
-                    <p class="eyebrow">Courses</p>
-                    <p>Data Science, Big Data, SQL, Data Visualization</p>
+                    <p><span class="eyebrow">Courses</span><br>Data Science, Big Data, SQL, Data Visualization</p>
                 </article>
                 <article class="card">
                     <img src="./resources/images/course-business.jpg" alt="chess pieces">
                     <h3>Business</h3>
-                    <p class="eyebrow">Courses</p>
-                    <p>Product Development, Business Development, Startup</p>
+                    <p><span class="eyebrow">Courses</span><br>Product Development, Business Development, Startup</p>
                 </article>
                 <article class="card">
                     <img src="./resources/images/course-marketing.jpg" alt="a person using a smart watch">
                     <h3>Marketing</h3>
-                    <p class="eyebrow">Courses</p>
-                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                    <p><span class="eyebrow">Courses</span><br>Analytics, Content Marketing, Mobile Marketing</p>
                 </article>
             </div>
         </div>
